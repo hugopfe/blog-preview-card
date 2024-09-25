@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-1: #F4D04E;
+    --color-2: #6B6B6B;
+    --color-3: #111111;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Figtree', sans-serif;
+
+}
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
