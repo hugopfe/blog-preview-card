@@ -2,7 +2,12 @@
 
 @font-face {
     font-family: 'Figtree';
-    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Figtree Extrabold';
+    src: url('../assets/fonts/static/Figtree-ExtraBold.ttf');
 }
 
 :root {
@@ -10,6 +15,14 @@
     --color-2: #6B6B6B;
     --color-3: #111111;
 
+    --spacing-1: 4px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+
+    --text-size-1: 0.875rem;
+    --text-size-2: 1rem;
+    --text-size-3: 1.5rem;
 }
 
 * {
@@ -21,11 +34,92 @@
 body {
     height: 100vh;
     font-family: 'Figtree', sans-serif;
+    background-color: var(--color-1);
+    line-height: 150%;
+    letter-spacing: 0;
+}
 
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    background-color: white;
+    max-width: 327px;
+    border: 1px solid var(--color-3);
+    border-radius: 20px;
+    padding: var(--spacing-4);
+    box-shadow: 8px 8px black;
+}
+
+.margin-top {
+    margin-top: var(--spacing-2);
+}
+
+figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category {
+    background-color: var(--color-1);
+    border-radius: 5px;
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+
+    font-size: var(--text-size-1);
+    font-weight: bold;
+    
+}
+
+.publish-date {
+    font-size: var(--text-size-1);
+}
+
+h1 {
+    font: 1.25rem 'Figtree Extrabold';
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+a:hover {
+    color: var(--color-1);
+}
+
+.desc {
+    color: var(--color-2);
+    font-size: var(--text-size-1);
+}
+
+.author {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.author img {
+    width: 32px;
+}
+
+.author p {
+    padding-left: var(--spacing-2);
+    font-weight: bold;
+    font-size: var(--text-size-1);
 }
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    margin-top: var(--spacing-4);
+    font-size: var(--text-size-1); 
+    text-align: center; 
+    color: var(--color-2);
 }
 .attribution a { 
      color: hsl(228, 45%, 44%); 
