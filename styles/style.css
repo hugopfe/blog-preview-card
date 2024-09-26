@@ -94,6 +94,11 @@ a:hover {
     color: var(--color-1);
 }
 
+a:focus {
+    color: var(--color-1);
+    outline: none;
+}
+
 .desc {
     color: var(--color-2);
     font-size: var(--text-size-1);
